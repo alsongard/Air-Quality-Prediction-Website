@@ -1,103 +1,64 @@
 import Image from "next/image";
+import { FaUser } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="w-full">
+      <div className='relative w-full h-[100vh]'>
+        <Image fill src="/images/pexels-alexazabache-3214995.jpg" alt='cityscape'/>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className='services w-full'>
+        <div className='w-full py-[25px] bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] text-white'>
+          <h1 className='text-[50px] text-center'>Breathe Smarter in the City</h1>
+          <p className='text-[20px] w-[90%] mx-auto text-center'>City life moves fast—and so does the air around you. At Breath Easy Real-Time Air Quality Prediction, we deliver real-time air quality updates designed for urban living. Whether you're commuting, exercising outdoors, or simply navigating your day, our service helps you stay ahead of pollution spikes and make healthier choices in the environments you live, work, and breathe in every day.</p>
+          <button className='bg-white w-[200px] mx-auto block text-black px-4 py-2 rounded-lg mt-4'>Get Started</button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="about">
+        <div className='w-full py-[25px] bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] text-white'>
+          <h1 className='text-[50px] text-center'>About</h1>
+          <p className='text-[20px] w-[90%] mx-auto text-center'>At Breath Easy Real-Time Air Quality Prediction, our mission is simple: empower urban communities with accurate, real-time information about the air they breathe. Born from a need for transparency in environmental data, we combine cutting-edge technology with predictive analytics to monitor and forecast air quality across cities. Our goal is to help you make smarter decisions—whether it's choosing when to go for a run, commute, or simply open a window. We believe clean air is a right, not a luxury, and we're here to help you breathe easier, every day.</p>
+          <button className='bg-white w-[200px] mx-auto block text-black px-4 py-2 rounded-lg mt-4'>About Us</button>
+        </div>
+      </section>
+
+      {/* modal */}
+      <div className='w-[500px] border-2 border-white mx-auto mt-[50px] p-4 rounded-lg bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] text-white'>
+        <form className='flex flex-col gap-4 items-center'>
+          <div className='w-[50%]  flex flex-row justify-between'><button className='bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] px-4 py-2 rounded-lg'>SignUp</button><button className='bg-black px-4 py-2 rounded-lg opacity-[0.5px]'>Login</button></div>
+    
+          <div className='w-full'>
+            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="name">
+              <FaUser/>
+              <input type="text" id="name" name="name" required />
+            </label>
+
+            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="email">
+              <MdEmail/>
+              <input type="email" id="email" name="email" required />
+            </label>
+
+            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="password">
+              <FaPhoneAlt/>
+              <input type="password" id="password" name="password" required />
+            </label>
+
+            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="confirm-password">
+              <RiLockPasswordFill/>
+              <input type="password" id="confirm-password" name="confirm-password" required />
+            </label>
+          </div>
+
+          <input type='submit' value='Submit' className='bg-white text-black px-4 py-2 rounded-lg mt-[1px]'/>
+        </form>
+      </div>
+    </main>
+
+
   );
 }
