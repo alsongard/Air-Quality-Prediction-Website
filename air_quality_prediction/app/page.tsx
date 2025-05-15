@@ -1,8 +1,6 @@
 import Image from "next/image";
-import { FaUser } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { RiLockPasswordFill } from "react-icons/ri";
+import FormLoginSignup from "./components/form_login_signup";
+
 
 export default function Home() {
   return (
@@ -27,36 +25,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* modal */}
-      <div className='w-[500px] border-2 border-white mx-auto mt-[50px] p-4 rounded-lg bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] text-white'>
-        <form className='flex flex-col gap-4 items-center'>
-          <div className='w-[50%]  flex flex-row justify-between'><button className='bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] px-4 py-2 rounded-lg'>SignUp</button><button className='bg-black px-4 py-2 rounded-lg opacity-[0.5px]'>Login</button></div>
-    
-          <div className='w-full'>
-            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="name">
-              <FaUser/>
-              <input type="text" id="name" name="name" required />
-            </label>
-
-            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="email">
-              <MdEmail/>
-              <input type="email" id="email" name="email" required />
-            </label>
-
-            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="password">
-              <FaPhoneAlt/>
-              <input type="password" id="password" name="password" required />
-            </label>
-
-            <label className='border-2 border-white flex flex-row items-center py-[2.5px] pl-[5px] my-[10px]' htmlFor="confirm-password">
-              <RiLockPasswordFill/>
-              <input type="password" id="confirm-password" name="confirm-password" required />
-            </label>
-          </div>
-
-          <input type='submit' value='Submit' className='bg-white text-black px-4 py-2 rounded-lg mt-[1px]'/>
-        </form>
-      </div>
+      
     </main>
 
 
