@@ -1,6 +1,7 @@
 export const servicesDataPackage = [
     {
         id: 1,
+        img:'/images/city_0.jpg',
         package: "Free Package",
         price: "$0/month",
         features: [
@@ -12,6 +13,7 @@ export const servicesDataPackage = [
     },
     {
         id: 2,
+        img:'/images/city_1.jpg',
         package: "Standard Package",
         price: "$9.99/month",
         features: [
@@ -23,6 +25,7 @@ export const servicesDataPackage = [
     },
     {
         id: 3,
+        img:'/images/city_2.jpg',
         package: "Premium Package",
         price: "$19.99/month",
         features: [
@@ -34,6 +37,7 @@ export const servicesDataPackage = [
     },
     {
         id: 4,
+        img:'/images/city_3.jpg',
         package: "Enterprise Package",
         price: "$Contact Us for Pricing",
         features: [
