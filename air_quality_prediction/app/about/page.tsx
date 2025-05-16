@@ -1,9 +1,9 @@
 export default function About()
 {
     return (
-        <section className="w-full ">
-            <h1 className="text-center my-[20px] text-[30px]">About Us</h1>
-            <div className='w-[90%] mx-auto'>
+        <section className="w-full  text-black bg-linear-to-r from-white dark:from-[rgba(85,153,167,0.66)]  to-white dark:to-[rgba(10,105,105,0.33)]   dark:text-white ">
+            <h1 className="text-center py-[20px] text-[50px]">About Us</h1>
+            <div className='w-[90%] text-[18px] mx-auto '>
                 <p>Founded in 2024 by Alson Tech, Breath Easy Real‑Time Air Quality Prediction was born out of a shared vision: to put clear, actionable air quality data into the hands of city dwellers everywhere. In an age where urban populations face ever‑rising levels of pollution, we recognized the urgent need for a transparent, reliable service that not only reports the current air quality index (AQI) but also forecasts short‑term trends—so you can plan your day with confidence.</p>
                 <p>From day one, we’ve collaborated with leading environmental and technology organizations to ensure our data is both accurate and accessible:</p>
             {/* </div> */}
@@ -45,7 +45,7 @@ export default function About()
                         <p className='ml-[18px]'>Working with policymakers and non‑profits to promote cleaner air standards and urban planning strategies that prioritize public health.</p>
                     </ul>
                 </div>
-                <p className="text-center ">As we continue to grow, Alson Tech and our partners remain dedicated to pushing the boundaries of real‑time environmental monitoring. Welcome to Breath Easy—because clean air is more than a statistic; it’s the foundation of a healthy, vibrant life in the city.</p>
+                <p className="text-center  pb-[20px] ">As we continue to grow, Alson Tech and our partners remain dedicated to pushing the boundaries of real‑time environmental monitoring. Welcome to Breath Easy—because clean air is more than a statistic; it’s the foundation of a healthy, vibrant life in the city.</p>
             </div>
         </section>
     )

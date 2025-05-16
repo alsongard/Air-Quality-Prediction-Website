@@ -4,12 +4,18 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-md:1051px;
+  --breakpoint-sm:862px;
+  --breakpoint-ssm:800px;
+  --breakpoint-sssm:689px;
+
 }
 
 @media (prefers-color-scheme: dark) {

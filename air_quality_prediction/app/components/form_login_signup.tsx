@@ -112,9 +112,9 @@ export default function FormLoginSignup() {
     return (
         <section className='w-full  '>
             {/* modal */}
-            <div className='w-[500px] border-2 border-white mx-auto pt-[50px] p-4 rounded-lg bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] text-white'>
+            <div className='w-[500px] border-2 border-white mx-auto pt-[50px] p-4 rounded-lg bg-gradient-to-r from-[rgba(85,153,167,0.66)] dark:from-black to-[rgba(10,105,105,0.33)] dark:to-black text-white'>
                 <form onSubmit={handleSubmit} className='flex flex-col gap-4 items-center'>
-                    <div className='w-[50%]  flex flex-row justify-between'><button onClick={SignUpFunc} className='bg-gradient-to-r from-[rgba(85,153,167,0.66)] to-[rgba(10,105,105,0.33)] px-4 py-2 rounded-lg'>SignUp</button><button onClick={LoginBtnFunc} className={clsx(loginElements ? "bg-black" : 'transparent', 'px-4 py-2 rounded-lg opacity-[0.5px]')}>Login</button></div>
+                    <div className='w-[50%]  flex flex-row justify-between'><button onClick={SignUpFunc} className='bg-gradient-to-r from-[rgba(85,153,167,0.66)] dark:from-gray-400 to-[rgba(10,105,105,0.33)] dark:to-gray-400 px-4 py-2 rounded-lg'>SignUp</button><button onClick={LoginBtnFunc} className={clsx(loginElements ? "bg-black dark:bg-[#a07b7b69]" : 'transparent', 'px-4 py-2 rounded-lg opacity-[0.5px] ')}>Login</button></div>
                 
                     <div className='w-full'>
 
