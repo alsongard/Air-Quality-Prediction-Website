@@ -3,9 +3,16 @@ import Link from "next/link";
 import { CiSun } from "react-icons/ci";
 import React from "react";
 import ThemeSwitch from "./themeProvider";
+import { IoMenu } from "react-icons/io5";
+import clsx from "clsx";
 // import { IoSunnyOutline } from "react-icons/io5";
 // import { FaUserCircle } from "react-icons/fa";
 export default function Header() {
+    const [smallMenu, setSmallMenu] = React.useState(false);
+    function handleClick()
+    {
+        setSmallMenu((prevValue)=>{return !prevValue});
+    }
     return (
         <header className='flex flex-row z-[1001]  sticky top-0 justify-between h-[100px] items-center bg-linear-to-r from-[rgba(85,153,167,0.66)]  to-[rgba(10,105,105,0.33)] text-white p-4 '>
             {/* Logo */}
@@ -30,7 +37,7 @@ export default function Header() {
             </div>
 
             {/* <div className="absolute top-[65px] right-[10px] w-[300px] top bg-linear-to-bl from-red-500 to-sky-800 rounded-md "> */}
-            <div className="hidden max-ssm:block absolute top-[65px] right-[10px] w-[300px] top bg-linear-to-bl from-[rgba(11,57,66,0.97)]  to-[rgba(10,105,105,0.86)] rounded-md ">
+            <div className={clsx(smallMenu ? "block" : 'hidden', 'absolute top-[65px] right-[10px] w-[300px] top bg-linear-to-bl from-[rgba(11,57,66,0.97)]  to-[rgba(10,105,105,0.86)] rounded-md ')}>
                 <ul className="navbar w-full text-center  flex flex-col items-center   py-[10px]">
                     <li className="border-b-2 w-full border-white mb-[5px]"><Link href="/">Home</Link></li>
                     <li className="border-b-2 w-full border-white mb-[5px]"><Link href="/services">Services</Link></li>
@@ -40,6 +47,8 @@ export default function Header() {
                     <li className="my-[5px]"><ThemeSwitch/></li>
                 </ul>
             </div>
+
+            <IoMenu onClick={handleClick} className="hidden  text-[22px] max-sssm:block"/>
 
         </header>
     )
