@@ -1,6 +1,6 @@
 # Breath Easy - Real-Time Air Quality Prediction 🌍
 
-![Next.js](https://img.shields.io/badge/Next.js-13-blue)
+![Next.js](https://img.shields.io/badge/Next.js-15-blue)
 ![JWT](https://img.shields.io/badge/Auth-JWT-orange)
 ![Machine Learning](https://img.shields.io/badge/ML-Decision_Tree-green)
 
